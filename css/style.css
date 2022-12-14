@@ -2,7 +2,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.hero {
+.hero, .about {
 	position: relative;
 	background-color: #191C21;
 	min-height: 100vh;
@@ -10,7 +10,11 @@
 	background-position: center;
 }
 
-.hero h1 {
+.about {
+    background-image: linear-gradient(to left, #191C21, #1B2027);
+}
+
+.hero h1, .about h1 {
 	font-size: 76px;
 	font-weight: 800;
 	margin: 0;
@@ -24,10 +28,24 @@
 	padding: 0;
 }
 
-.hero p {
+.hero p, .about p {
 	padding: 0;
 	margin: 1em 0 0 0;
 	font-size: 18px;
 	font-weight: 500;
 	text-align: justify;
+}
+
+.about a {
+	padding: 0;
+	margin: 1em 0 0 0;
+	font-size: 18px;
+	font-weight: 500;
+	text-align: justify;
+    text-decoration: none;
+    color: #fff;
+}
+
+.about a:hover {
+    color: #ced4da;
 }
