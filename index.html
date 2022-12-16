@@ -1,71 +1,374 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Portfolio SSO</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio SSO</title>
 
-        <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
 
-        <!-- Bootstrap CDN -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    </head>
-    <body>
-        <section id="navbar" class="navbar navbar-expand-lg navbar-dark shadow-sm" style="background-color: #222831;">
-            <div class="container-fluid mx-4 my-2">
-                <a class="navbar-brand mb-0 h1" href="#">Edgar Riko</a>
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
 
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link text-white px-3" href="#">Home</a>
-                        <a class="nav-link text-white px-3" href="#">About me</a>
-                        <a class="nav-link text-white px-3" href="#">My Projects</a>
-                        <a class="nav-link text-white px-3" href="#">Contact Me</a>
+    <!-- Bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" />
+  </head>
+  <body>
+    <section id="navbar" class="navbar navbar-expand-lg navbar-dark shadow-sm" style="background-color: #222831">
+      <div class="container-fluid mx-4 my-2">
+        <a class="navbar-brand mb-0 h1" href="#">Edgar Riko</a>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link text-white px-3" href="#">Home</a>
+            <a class="nav-link text-white px-3" href="#">About me</a>
+            <a class="nav-link text-white px-3" href="#">My Projects</a>
+            <a class="nav-link text-white px-3" href="#">Contact Me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="hero" class="hero d-flex flex-column justify-content-center">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 intros text-start">
+            <h2 class="text-white-50">WELCOME TO MY WORLD</h2>
+            <h1 class="text-white">Hi, I'm <span style="color: #00adb5">Edgar Riko</span></h1>
+            <p class="text-white-50">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent molestie enim eu pretium suscipit. Aliquam non pulvinar purus, sed commodo odio. Sed ut ornare mauris. Nunc vehicula eros mauris, non pretium lectus dapibus et.
+            </p>
+          </div>
+          <div class="col-md-6 intros text-end">
+            <img src="img/Avatar.png" alt="avatar" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about d-flex flex-column justify-content-center">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 intros text-start">
+            <h1 class="text-white">About <span style="color: #00adb5">me</span></h1>
+            <p class="text-white-50 mb-2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur
+              tempus urna at turpis condimentum lobortis....
+            </p>
+            <a href="#">Read more</a>
+          </div>
+          <div class="col-md-6 intros text-end">
+            <img src="img/About.png" alt="avatar" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- My recent works -->
+
+    <section id="recent" class="recent d-flex flex-column justify-content-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h1 class="text-center">
+              My recent
+              <span>works</span>
+            </h1>
+          </div>
+
+          <div class="col-lg-12">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all" type="button" role="tab" aria-controls="home" aria-selected="true">All</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="ui-tab" data-bs-toggle="tab" data-bs-target="#ui" type="button" role="tab" aria-controls="profile" aria-selected="false">UI</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="ux-tab" data-bs-toggle="tab" data-bs-target="#ux" type="button" role="tab" aria-controls="contact" aria-selected="false">UX</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="webdesign-tab" data-bs-toggle="tab" data-bs-target="#webdesign" type="button" role="tab" aria-controls="contact" aria-selected="false" style="width: 174px">Web Design</button>
+              </li>
+            </ul>
+            <div class="tab-content mt-4" id="myTabContent">
+              <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
+                <!-- Card -->
+                <div class="row d-flex justify-content-center align-items-center">
+                  <div class="col-lg-8">
+                    <div class="row">
+                      <div class="col-lg-4">
+                        <div class="card">
+                          <div class="row d-flex justify-content-center align-items-center">
+                            <div class="col-md-6">
+                              <img src="img/recent1.png" class="img-fluid" alt="Image RecentWorks" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-4">
+                        <div class="card">
+                          <div class="row d-flex justify-content-center align-items-center">
+                            <div class="col-md-6">
+                              <img src="img/recent2.png" class="img-fluid" alt="Image RecentWorks" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-4">
+                        <div class="card">
+                          <div class="row d-flex justify-content-center align-items-center">
+                            <div class="col-md-6">
+                              <img src="img/recent3.png" class="img-fluid" alt="Image RecentWorks" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
+                  </div>
                 </div>
               </div>
-        </section>
 
-        <section id="hero" class="hero d-flex flex-column justify-content-center">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-6 intros text-start">
-                        <h2 class="text-white-50">WELCOME TO MY WORLD</h2>
-                        <h1 class="text-white">Hi, I'm <span style="color: #00ADB5;">Edgar Riko</span></h1>
-                        <p class="text-white-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                            Praesent molestie enim eu pretium suscipit. 
-                            Aliquam non pulvinar purus, sed commodo odio. 
-                            Sed ut ornare mauris. Nunc vehicula eros mauris, non pretium lectus dapibus et.
-                        </p>
+              <!-- 2 -->
+
+              <div class="tab-pane fade show" id="ui" role="tabpanel" aria-labelledby="ui-tab">
+                <!-- Card -->
+                <div class="row d-flex justify-content-center align-items-center">
+                  <div class="col-lg-8">
+                    <div class="row">
+                      <div class="col-lg-4">
+                        <div class="card">
+                          <div class="row d-flex justify-content-center align-items-center">
+                            <div class="col-md-6">
+                              <img src="img/recent2.png" class="img-fluid" alt="Image RecentWorks" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <div class="col-md-6 intros text-end">
-                        <img src="img/Avatar.png" alt="avatar" class="img-fluid"/>
-                    </div>
+                  </div>
                 </div>
-            </div>
-        </section>
+              </div>
 
-        <section id="about" class="about d-flex flex-column justify-content-center">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-6 intros text-start">
-                        <h1 class="text-white">About <span style="color: #00ADB5;">me</span></h1>
-                        <p class="text-white-50 mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                            Nunc vulputate libero et velit interdum, ac aliquet odio mattis. 
-                            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
-                            Curabitur tempus urna at turpis condimentum lobortis.... 
-                        </p>
-                        <a href="#">Read more</a>
+              <!-- 3 -->
+              <div class="tab-pane fade show" id="ui" role="tabpanel" aria-labelledby="ui-tab">
+                <!-- Card -->
+                <div class="row d-flex justify-content-center align-items-center">
+                  <div class="col-lg-8">
+                    <div class="row">
+                      <div class="col-lg-4">
+                        <div class="card">
+                          <div class="row d-flex justify-content-center align-items-center">
+                            <div class="col-md-6">
+                              <img src="img/recent2.png" class="img-fluid" alt="Image RecentWorks" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <div class="col-md-6 intros text-end">
-                        <img src="img/About.png" alt="avatar" class="img-fluid"/>
-                    </div>
+                  </div>
                 </div>
-            </div>
-        </section>
+              </div>
 
-        <!-- Bootstrap CDN-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-    </body>
-</html
+              <!-- 4 -->
+              <div class="tab-pane fade show" id="ux" role="tabpanel" aria-labelledby="ux-tab">
+                <!-- Card -->
+                <div class="row d-flex justify-content-center align-items-center">
+                  <div class="col-lg-8">
+                    <div class="row">
+                      <div class="col-lg-4">
+                        <div class="card">
+                          <div class="row d-flex justify-content-center align-items-center">
+                            <div class="col-md-6">
+                              <img src="img/recent3.png" class="img-fluid" alt="Image RecentWorks" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 5 -->
+
+              <div class="tab-pane fade show" id="webdesign" role="tabpanel" aria-labelledby="webdesign-tab">
+                <!-- Card -->
+                <div class="row d-flex justify-content-center align-items-center">
+                  <div class="col-lg-8">
+                    <div class="row">
+                      <div class="col-lg-4">
+                        <div class="card">
+                          <div class="row d-flex justify-content-center align-items-center">
+                            <div class="col-md-6">
+                              <img src="img/recent1.png" class="img-fluid" alt="Image RecentWorks" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+              <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact us -->
+    <section id="contactus" class="contactus d-flex align-items-center justify-content-center" style="background-color: 191C21">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="left">
+              <h1>Got a project in</h1>
+              <h1 class="mind">mind?</h1>
+              <img src="img/ContacUs.png" class="img-fluid mt-3" alt="Image ContactUs" />
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <form action="">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="mb-3">
+                    <label for="name" class="form-label">Your name</label>
+                    <input type="text" class="form-control" id="nick" placeholder="Name" />
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="name@example.com" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-12 mt-4">
+                <div class="mb-3">
+                  <label for="message" class="form-label">Your Message</label>
+                  <textarea class="form-control" id="message" rows="5" cols="5" placeholder="Message"></textarea>
+                </div>
+              </div>
+
+              <div class="col-lg-12 button-submit">
+                <button type="submit" class="btn btn-primary">
+                  Send Message
+                  <svg width="30" height="32" viewBox="0 0 30 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g filter="url(#filter0_d_2_9514)">
+                      <path d="M25 2.5L14 13.5" stroke="#EEEEEE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M25 2.5L18 22.5L14 13.5L5 9.5L25 2.5Z" stroke="#EEEEEE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </g>
+                    <defs>
+                      <filter id="filter0_d_2_9514" x="-1" y="0.5" width="32" height="32" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                        <feOffset dy="4" />
+                        <feGaussianBlur stdDeviation="2" />
+                        <feComposite in2="hardAlpha" operator="out" />
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0" />
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2_9514" />
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2_9514" result="shape" />
+                      </filter>
+                    </defs>
+                  </svg>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="footer d-flex align-items-center justify-content-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="footer-content">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="footer-menu">
+                    <ul>
+                      <li>
+                        <a href="#">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M3 9L12 2L21 9V20C21 20.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V9Z"
+                              stroke="#EEEEEE"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path d="M9 22V12H15V22" stroke="#EEEEEE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                          Home
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21"
+                              stroke="#EEEEEE"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z" stroke="#EEEEEE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                          About me
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M21 15.9201V18.9201C21.0011 19.1986 20.9441 19.4743 20.8325 19.7294C20.7209 19.9846 20.5573 20.2137 20.3521 20.402C20.1468 20.5902 19.9046 20.7336 19.6407 20.8228C19.3769 20.912 19.0974 20.9452 18.82 20.9201C15.7428 20.5857 12.787 19.5342 10.19 17.8501C7.77382 16.3148 5.72533 14.2663 4.18999 11.8501C2.49997 9.2413 1.44824 6.27109 1.11999 3.1801C1.095 2.90356 1.12787 2.62486 1.21649 2.36172C1.30512 2.09859 1.44756 1.85679 1.63476 1.65172C1.82196 1.44665 2.0498 1.28281 2.30379 1.17062C2.55777 1.05843 2.83233 1.00036 3.10999 1.0001H6.10999C6.5953 0.995321 7.06579 1.16718 7.43376 1.48363C7.80173 1.80008 8.04207 2.23954 8.10999 2.7201C8.23662 3.68016 8.47144 4.62282 8.80999 5.5301C8.94454 5.88802 8.97366 6.27701 8.8939 6.65098C8.81415 7.02494 8.62886 7.36821 8.35999 7.6401L7.08999 8.9101C8.51355 11.4136 10.5864 13.4865 13.09 14.9101L14.36 13.6401C14.6319 13.3712 14.9751 13.1859 15.3491 13.1062C15.7231 13.0264 16.1121 13.0556 16.47 13.1901C17.3773 13.5286 18.3199 13.7635 19.28 13.8901C19.7658 13.9586 20.2094 14.2033 20.5265 14.5776C20.8437 14.9519 21.0122 15.4297 21 15.9201Z"
+                              stroke="#EEEEEE"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                          Contact</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="footer-social d-flex justify-content-center align-items-center">
+                    <ul>
+                      <li>
+                        <a href="#" class="btn text-white btn-floating m-1"><i class="bi bi-facebook"></i></a>
+                      </li>
+
+                      <li>
+                        <a href="#" class="btn text-white btn-floating m-1"><i class="bi bi-instagram"></i></a>
+                      </li>
+                      <li>
+                        <a href="#" class="btn text-white btn-floating m-1"><i class="bi bi-twitter"></i></a>
+                      </li>
+                      <li>
+                        <a href="#" class="btn text-white btn-floating m-1"><i class="bi bi-youtube"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
+</html>

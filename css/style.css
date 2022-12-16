@@ -1,51 +1,344 @@
 * {
-    font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
-.hero, .about {
-	position: relative;
-	background-color: #191C21;
-	min-height: 100vh;
-	background-size: cover;
-	background-position: center;
+.hero,
+.about,
+.contactus {
+  position: relative;
+  background-color: #191c21;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
 }
 
 .about {
-    background-image: linear-gradient(to left, #191C21, #1B2027);
+  background-image: linear-gradient(to left, #191c21, #1b2027);
 }
 
-.hero h1, .about h1 {
-	font-size: 76px;
-	font-weight: 800;
-	margin: 0;
-	padding: 0;
+.hero h1,
+.about h1 {
+  font-size: 76px;
+  font-weight: 800;
+  margin: 0;
+  padding: 0;
 }
 
 .hero h2 {
-	font-size: 26px;
-	font-weight: 800;
-    margin-bottom: 20px;
-	padding: 0;
+  font-size: 26px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  padding: 0;
 }
 
-.hero p, .about p {
-	padding: 0;
-	margin: 1em 0 0 0;
-	font-size: 18px;
-	font-weight: 500;
-	text-align: justify;
+.hero p,
+.about p {
+  padding: 0;
+  margin: 1em 0 0 0;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: justify;
 }
 
 .about a {
-	padding: 0;
-	margin: 1em 0 0 0;
-	font-size: 18px;
-	font-weight: 500;
-	text-align: justify;
-    text-decoration: none;
-    color: #fff;
+  padding: 0;
+  margin: 1em 0 0 0;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: justify;
+  text-decoration: none;
+  color: #fff;
 }
 
 .about a:hover {
-    color: #ced4da;
+  color: #ced4da;
+}
+
+/* Recent works */
+.recent {
+  background: #191c21;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.recent h1 {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 96px;
+  /* identical to box height */
+
+  /* Color 3 */
+
+  color: #eeeeee;
+  margin: 0;
+  padding: 0;
+}
+
+.recent span {
+  color: #00adb5;
+}
+
+.recent .nav-tabs {
+  border: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.recent .nav-tabs .nav-item {
+  margin: 0 10px;
+}
+
+.recent .nav-tabs .nav-item .nav-link {
+  background: rgba(57, 62, 70, 0.5);
+  backdrop-filter: blur(4px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 24px;
+  width: 100px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+
+  /* Color 3 */
+
+  color: #eeeeee;
+}
+
+.recent .nav-tabs .nav-item .nav-link.active {
+  background: #00adb5;
+  border-radius: 24px;
+
+  color: #eeeeee;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.recent .card {
+  background: rgba(57, 62, 70, 0.5);
+  backdrop-filter: blur(2px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.recent .card img {
+  /* Image zoom */
+  transition: transform 0.2s;
+
+  width: 100%;
+  height: 100%;
+}
+
+/* Contact us */
+
+.contactus .left h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 70px;
+
+  color: #eeeeee;
+}
+
+.contactus .left .mind {
+  color: #00adb5;
+}
+
+.contactus label {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+
+  /* Color 3 */
+
+  color: #eeeeee;
+}
+
+.contactus input[type="text"],
+.contactus input[type="email"] {
+  width: 100%;
+  height: 50px;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+  padding: 0 10px;
+  margin-bottom: 20px;
+
+  background: rgba(57, 62, 70, 0.5);
+  border-radius: 16px;
+  /* identical to box height */
+
+  /* Color 3 */
+
+  color: #eeeeee;
+}
+
+.contactus textarea,
+.contactus textarea:focus {
+  width: 100%;
+  height: 150px;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+  padding: 10px;
+  margin-bottom: 20px;
+
+  background: rgba(57, 62, 70, 0.5);
+  border-radius: 16px;
+  /* identical to box height */
+
+  /* Color 3 */
+
+  color: #eeeeee;
+}
+
+.contactus .button-submit {
+  margin-top: 50px;
+}
+
+.contactus .button-submit button {
+  background: #00adb5;
+  border-radius: 24px;
+  width: 232px;
+  height: 47px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+
+  color: #eeeeee;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.contactus .button-submit button:hover {
+  /* Gradient */
+  background-color: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 24px;
+  color: #191c21;
+  /* SVG color */
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.contactus .button-submit button:hover svg {
+  fill: black;
+}
+
+/* Footer */
+
+.footer {
+  background: #222831;
+  height: 30vh;
+  align-items: center;
+  text-align: center;
+}
+
+.footer .footer-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding-top: 50px;
+}
+
+.footer .footer-menu a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer .footer-menu a:hover {
+  color: #ced4da;
+}
+
+.footer .footer-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer .footer-menu ul li {
+  display: inline-block;
+  /* SVG */
+}
+
+.footer .footer-menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 30px;
+  display: flex;
+  align-items: center;
+}
+
+.footer .footer-menu ul li a:hover {
+  color: #ced4da;
+}
+
+.footer .footer-menu ul li a svg {
+  margin-right: 8px;
+}
+
+.footer .footer-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding-top: 40px;
+}
+
+.footer .footer-social a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 7px;
+}
+
+.footer .footer-social a:hover {
+  color: #ced4da;
+}
+
+.footer .footer-social ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* Make circle on icon */
+.footer .footer-social ul li {
+  display: inline-block;
+  /* SVG */
+}
+
+.footer .footer-social ul li a {
+  color: #fff;
+  text-decoration: none;
+  gap: 24px;
+
+  background: #393e46;
+  border-radius: 50px;
+}
+
+.footer .footer-social ul li a:hover {
+  background-color: white;
+}
+
+.footer .footer-social ul li a:hover i {
+  color: black;
 }
